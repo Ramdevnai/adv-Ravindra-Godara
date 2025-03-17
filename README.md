@@ -1,6 +1,37 @@
-# अधिवक्ता रवीन्द्र गोदारा - वेबसाइट
+# अधिवक्ता रवीन्द्र गोदारा - Official Website
 
-एसडीएम कोर्ट नोहर में प्रैक्टिस करने वाले अधिवक्ता रवीन्द्र गोदारा जी की आधिकारिक वेबसाइट। यह वेबसाइट राजस्व मामलों में उनकी विशेषज्ञता, विशेष रूप से RT Act-1955 के तहत, को प्रदर्शित करती है।
+This is the official website for Advocate Ravindra Godara, specializing in Revenue Court matters, RT Act-1955, and land disputes at the SDM, ADM, and Revenue Appeal Officer Court in Nohar, Rajasthan.
+
+## Features
+
+- Responsive design for all devices
+- Information about legal services offered
+- Team information
+- Contact and enquiry forms
+- Detailed explanations of various legal services
+
+## Services
+
+- Land Disputes (भूमि विवाद)
+- Revenue Records (राजस्व रिकॉर्ड)
+- RT Act-1955
+- Land Acquisition (भूमि अधिग्रहण)
+- Property Inheritance (संपत्ति विरासत)
+- Document Verification (दस्तावेज़ सत्यापन)
+
+## Contact
+
+- Phone: +91 94607-64064, +91 94608-25100
+- Email: Ravigodara@gmail.com
+- Location: Chamber No. 04, SDM Court, Nohar, Rajasthan
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Font Awesome
+- Google Fonts
 
 ## विशेषताएँ
 
