@@ -117,18 +117,18 @@
                     </div>
                     <div class="enquiry-form">
                         <h3>अपनी पूछताछ भेजें</h3>
-                        <form>
+                        <form id="enquiryForm">
                             <div class="form-group">
-                                <input type="text" placeholder="आपका नाम" required>
+                                <input type="text" id="name" placeholder="आपका नाम" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" placeholder="ईमेल" required>
+                                <input type="email" id="email" placeholder="ईमेल" required>
                             </div>
                             <div class="form-group">
-                                <input type="tel" placeholder="फोन नंबर" required>
+                                <input type="tel" id="phone" placeholder="फोन नंबर" required>
                             </div>
                             <div class="form-group">
-                                <select required>
+                                <select id="service" required>
                                     <option value="" disabled selected>सेवा का चयन करें</option>
                                     <option value="भूमि विवाद">भूमि विवाद</option>
                                     <option value="राजस्व रिकॉर्ड">राजस्व रिकॉर्ड</option>
@@ -140,9 +140,9 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <textarea placeholder="अपना संदेश यहां लिखें..." required></textarea>
+                                <textarea id="message" placeholder="अपना संदेश यहां लिखें..." required></textarea>
                             </div>
-                            <button type="submit" class="btn">अभी संपर्क करें</button>
+                            <button type="submit" id="submitEnquiry" class="btn">पूछताछ भेजें (₹500)</button>
                         </form>
                     </div>
                 </div>
@@ -157,7 +157,7 @@
                     </div>
                     <div class="faq-item">
                         <h4><i class="fas fa-question-circle"></i> परामर्श के लिए फीस क्या है?</h4>
-                        <p>प्रारंभिक परामर्श के लिए फीस मामले की प्रकृति और जटिलता पर निर्भर करती है। कृपया विस्तृत जानकारी के लिए हमसे संपर्क करें।</p>
+                        <p>प्रारंभिक परामर्श के लिए ₹500 की फीस है। इस फीस के भुगतान के बाद हमारी टीम आपसे संपर्क करेगी और आपके मामले पर विस्तृत परामर्श प्रदान करेगी।</p>
                     </div>
                     <div class="faq-item">
                         <h4><i class="fas fa-question-circle"></i> क्या आप अन्य प्रकार के कानूनी मामलों में भी सहायता करते हैं?</h4>
@@ -210,6 +210,39 @@
         <a href="contact.html"><i class="fas fa-phone-alt"></i></a>
     </div>
 
+    <!-- Payment Modal -->
+    <div class="payment-modal" id="paymentModal">
+        <div class="payment-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            
+            <div id="paymentFormContainer">
+                <div class="payment-header">
+                    <h3>परामर्श फीस का भुगतान करें</h3>
+                    <p>हमारे विशेषज्ञों द्वारा आपके मामले पर विचार करने के लिए</p>
+                </div>
+                
+                <div class="payment-amount">₹500</div>
+                
+                <div class="qr-code-container">
+                    <img src="images/QRcode.jpg" alt="Payment QR Code">
+                </div>
+                
+                <p class="payment-note">किसी भी UPI ऐप (PhonePe, Google Pay, Paytm) से स्कैन करके भुगतान करें</p>
+                
+                <button class="verify-button" id="verifyPayment">भुगतान की पुष्टि करें</button>
+            </div>
+            
+            <div class="payment-success" id="paymentSuccess">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>भुगतान सफल!</h3>
+                <p>आपकी पूछताछ सफलतापूर्वक दर्ज कर ली गई है। हमारी टीम जल्द ही आपसे संपर्क करेगी।</p>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
+    <script src="payment.js"></script>
 </body>
 </html> 
